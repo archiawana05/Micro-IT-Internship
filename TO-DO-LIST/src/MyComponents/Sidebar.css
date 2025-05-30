@@ -1,0 +1,74 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: var(--card-bg);
+  color: var(--text);
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem; /* Tighter spacing */
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+}
+
+.sidebar li:hover {
+  color: var(--accent);
+}
+
+.sidebar p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.custom-calendar {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.7rem; /* Smaller font */
+  margin-top: 1rem;
+}
+
+.custom-calendar caption {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+.custom-calendar th, .custom-calendar td {
+  padding: 0.2rem;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+}
+
+.custom-calendar td.today {
+  background-color: var(--accent);
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}

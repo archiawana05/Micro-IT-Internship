@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>calculatorPro | Archi Awana</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>🔢</text></svg>">
+
+</head>
+<body>
+  <div class="calculator">
+    <div class="top-bar">
+      <span class="brand">💻Calc Pro</span>
+      <div class="top-buttons">
+        <button id="historyToggle">📋</button>
+        <button id="themeToggle">🌙</button>
+      </div>
+    </div>
+
+    <div class="display">
+      <div class="main-display" id="display">0</div>
+      <div class="mini-display" id="miniDisplay"></div>
+    </div>
+
+    <div class="buttons">
+      <button data-value="(">(</button>
+      <button data-value=")">)</button>
+      <button data-value="%">%</button>
+      <button data-value="√(">√</button>
+      <button data-value="π">π</button>
+      <button data-value="^">^</button>
+      <button data-value="!">!</button>
+      <button data-value="/">÷</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="*">×</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="-">-</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value="+">+</button>
+
+      <button data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button id="delete">⌫</button>
+      <button id="clear">AC</button>
+
+      <button class="equal" id="equals">=</button>
+    </div>
+
+    <div class="history-overlay hidden" id="historyPanel">
+      <h3>History</h3>
+      <ul id="historyList"></ul>
+      <button class="clear-history" onclick="clearHistory()">Clear History</button>
+      <button class="close-history" id="closeHistory">Close</button>
+    </div>
+
+    <footer>
+      <p>Made with 🌷 by Archi Awana</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
